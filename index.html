@@ -1,0 +1,37 @@
+
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Ocena twoich działań na tronie!</title>
+</head>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<center>
+<body> <h1 style="font-family:arial ;">Naciśnij przycisk, aby dowiedzieć się, co Mariusz Pudzianowski sądzi o twoich działaniach na tronie.</h1>
+   <button style="width: 300px; height: 100px; font-size: large;" type="button">Powiadom Pudziana!</button>
+</body>
+</center>
+<script>
+
+   var pressedButton = document.getElementsByTagName("button")[0];
+   pressedButton.addEventListener("click", function (event) {
+    function random_item(items)
+{
+  
+return items[Math.floor(Math.random()*items.length)];
+     
+}
+
+var items = ["Wspaniale, 10/10", "Całkiem nieźle, 8/10", "No, no... 5/10", "Sraczka palanta, 2/10"];
+
+      alert("Ocena Pudzaiana twoich działań na klopie: " + random_item(items)  +"!")
+      var delay = 1000;
+setTimeout(function() {
+    location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+}, delay);
+      
+   })
+</script>
+</html>
